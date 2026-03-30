@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0a0a0a;
+  font-family: "Syne", sans-serif;
+  color: white;
+}
+
+/* botão topo */
+.actions {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.actions button {
+  font-family: "Syne Mono", monospace;
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.05);
+  color: white;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.actions button:hover {
+  transform: translateY(-2px);
+  background: rgba(255,255,255,0.1);
+}
+
+/* página */
+.page {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* currículo */
+.resume {
+  background: white;
+  color: black;
+  width: 100%;
+  max-width: 800px;
+  padding: 40px;
+  border-radius: 12px;
+}
+
+/* header */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+header h1 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+.title {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.contact {
+  font-size: 0.8rem;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* sections */
+section {
+  margin-bottom: 20px;
+}
+
+section h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 8px;
+}
+
+/* items */
+.item {
+  margin-bottom: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.role {
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+ul {
+  margin-left: 18px;
+}
+
+li {
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+/* impressão */
+@media print {
+  body {
+    background: white;
+  }
+
+  .actions {
+    display: none;
+  }
+
+  .resume {
+    box-shadow: none;
+    border-radius: 0;
+  }
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .resume {
+    padding: 20px;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 2px;
+  }
+}

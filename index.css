@@ -70,9 +70,9 @@ body{
   padding-bottom: 10vh;
   border-radius: 30px;
 
-  background: linear-gradient(270deg, rgb(48, 1, 1), black, rgb(33, 3, 12));
-  background-size: 400% 400%;
-  animation: gradientMove 10s ease infinite;
+  background: linear-gradient(270deg, black, rgb(48, 1, 1), black, rgb(33, 3, 12), black);
+  background-size: 500% 500%;
+  animation: gradientMove 25s ease-in-out infinite;
 }
 
 @keyframes gradientMove {

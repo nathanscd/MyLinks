@@ -33,7 +33,7 @@ body{
   background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  animation: shine 3s ease-in-out infinite;
+  animation: shine 5s ease-in-out infinite;
 }
 
 .Presentation p{
@@ -53,9 +53,9 @@ body{
 }
 
 @keyframes shine {
-  0%{opacity: 0.3;}
+  0%{opacity: 0.1;}
   50%{opacity: 1;}
-  100%{opacity: 0.3;}
+  100%{opacity: 0.1;}
 }
 
 .home {
@@ -69,6 +69,7 @@ body{
   text-align: center;
   padding-bottom: 10vh;
   border-radius: 30px;
+  border: solid rgba(255,255,255,0.05) 0.1px;
 
   background: linear-gradient(270deg, black, rgb(48, 1, 1), black, rgb(33, 3, 12), black);
   background-size: 500% 500%;
@@ -196,7 +197,7 @@ footer p{
   gap: 16px;
   margin-top: -40px;
   padding: 2vh 1vw;
-  background-color: black;
+  background: linear-gradient(-40deg, rgb(30, 2, 2), black);
   border: solid 0.1px rgba(255, 255, 255, 0.100);
   border-radius: 25px;
   max-width: 450px;

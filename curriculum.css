@@ -15,6 +15,7 @@ body {
   display: flex;
   justify-content: center;
   padding: 20px;
+  gap: 1vw;
 }
 
 .actions button {
@@ -27,6 +28,25 @@ body {
   cursor: pointer;
   backdrop-filter: blur(10px);
   transition: 0.3s;
+}
+
+.actions > a{
+  font-family: "Syne Mono", monospace;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgb(48, 1, 1);
+  color: white;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.actions > a:hover {
+  transform: translateY(-2px);
+  color: white;
+  background: rgba(255,255,255,0.1);
 }
 
 .actions button:hover {
@@ -70,6 +90,10 @@ header h1 {
   color: rgb(82, 0, 0)
 }
 
+p, li{
+  font-size: 0.8rem;
+}
+
 .contact {
   font-size: 0.8rem;
   display: flex;
@@ -109,7 +133,6 @@ ul {
 }
 
 li {
-  font-size: 0.9rem;
   margin-bottom: 4px;
 }
 
